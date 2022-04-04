@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function()
+        {
+            $(".toggle").on("click",function()
+            {
+                if($(".item").hasClass("active"))
+                {
+                    $(".item").removeClass("active");
+                }
+                else
+                {
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">LOGO</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item button"><a href="#">Login</a></li>
+                <li class="item button secondary"><a href="#">Sign up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <div class="anmahsei">
+            <h1>Titulo</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam sequi quisquam ipsa rem neque? Cumque aliquid atque dignissimos illum. Nulla distinctio, voluptatum quo reprehenderit perferendis enim. Quisquam at labore maxime?
+            </p>
+        </div>
+        
+    </main>
+</body>
+</html>
